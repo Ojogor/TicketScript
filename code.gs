@@ -49,8 +49,7 @@ function onEditTrigger(e) {
                  "Hours: 7 PM - 10 PM (Mela Hours) + 8.30 PM - 10PM (Performance Hours)\n\n" +
                  "Booking ID: " + bookingId + "\n" +
                  "You have purchased " + numberOfTickets + " ticket(s).\n\n" +
-                 "For any inquiries, please contact us at bangladeshculturalcommunity@gmail.com.\n\n" +
-                 "Best regards,\nBangladesh Cultural Community";
+                 "For any inquiries, please contact us at @email";
 
       MailApp.sendEmail({
         to: email,
