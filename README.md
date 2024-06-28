@@ -3,7 +3,10 @@
 ---
 
 
-https://github.com/Ojogor/TicketScript/assets/98194481/b9402d3f-b80c-4d95-848c-d7b667c80764
+https://github.com/Ojogor/TicketScript/assets/98194481/feadd552-6ff7-4626-94af-95a149096447
+
+
+
 
 
 # TicketScript
