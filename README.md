@@ -2,6 +2,10 @@
 
 ---
 
+
+https://github.com/Ojogor/TicketScript/assets/98194481/b9402d3f-b80c-4d95-848c-d7b667c80764
+
+
 # TicketScript
 
 TicketScript is a custom JavaScript solution for generating unique tickets with QR codes for your events. Designed for seamless integration with Google Forms and Google Sheets, it offers a cost-effective alternative to expensive ticketing services. This script automates the entire process from user registration to attendance tracking, making it perfect for small organizations and events operating on a budget.
