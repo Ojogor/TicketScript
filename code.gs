@@ -13,9 +13,9 @@ function onEditTrigger(e) {
 
     // Assuming the email addresses are in Column B
     var emailColumn = 2; // Column B
-    var ticketColumn = 3; // Column D
-    var bookingIdColumn = 8; // Column K
-    var attendedColumn = 9; // Column L (for attendance)
+    var ticketColumn = 4; // Column D
+    var bookingIdColumn = 11; // Column K
+    var attendedColumn = 12; // Column L (for attendance)
 
     var email = sheet.getRange(e.range.getRow(), emailColumn).getValue();
     var numberOfTickets = sheet.getRange(e.range.getRow(), ticketColumn).getValue();
@@ -42,14 +42,16 @@ function onEditTrigger(e) {
     if (result == ui.Button.YES && isValidEmail(email)) {
       var subject = "Ticket Confirmation for Event";
       var body = "Dear Customer,\n\n" +
-                 "Thank you for purchasing tickets for our Boisakhi Event (Bengali New Year Event)!\n\n" +
+                 "Thank you for purchasing tickets for our event!\n\n" +
                  "Event Details:\n" +
-                 "Address: St. John's Farmers' Market, 245 Freshwater Rd\n" +
-                 "Date: May 9th, 2024\n" +
-                 "Hours: 7 PM - 10 PM (Mela Hours) + 8.30 PM - 10PM (Performance Hours)\n\n" +
+                 "Address: Breeze Way, 1 Arctic Avenue, University Centre Room UC-1004, St. John's, NL A1C 5S7\n" +
+                 "Date: February 16th, 2023\n" +
+                 "Hours: 7 PM - 9:30 PM\n\n" +
                  "Booking ID: " + bookingId + "\n" +
                  "You have purchased " + numberOfTickets + " ticket(s).\n\n" +
-                 "For any inquiries, please contact us at @email";
+                 "For any inquiries, please contact us at bangladeshculturalcommunity@gmail.com.\n\n" +
+                 "QR Code: " + qrCodeUrl + "\n\n" +
+                 "Best regards,\nBangladesh Cultural Community";
 
       MailApp.sendEmail({
         to: email,
