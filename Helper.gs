@@ -7,7 +7,7 @@ function doGet(e) {
     }
 
     var sheet = SpreadsheetApp.openById("RSVP").getActiveSheet();
-    var attendedColumn = 9; // Assuming Column L for attendance
+    var attendedColumn = 12; // Assuming Column L for attendance
 
     var row = getRowByBookingId(sheet, bookingId);
 
@@ -23,7 +23,7 @@ function doGet(e) {
 }
 
 function getRowByBookingId(sheet, bookingId) {
-  var bookingIdColumn = 8; // Assuming Column K for Booking ID
+  var bookingIdColumn = 11; // Assuming Column K for Booking ID
   var data = sheet.getDataRange().getValues();
 
   for (var i = 0; i < data.length; i++) {
